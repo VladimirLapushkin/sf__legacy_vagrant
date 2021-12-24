@@ -1,0 +1,7 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "sh_ubuntu_pg84"
+  config.vm.box_url= "package.box"
+	
+  config.vm.synced_folder "c:/work/vagrant/vagrant_data", "/var/vagrant_data"
+  config.vm.host_name = "postgresql"
+end
